@@ -1,2 +1,3 @@
 # lightbox-
 Commonly used layer case
+我们在网页上经常会碰到弹出效果，在这结合jquery和css3属性制作不错的弹层效果，代码很简单。希望可以在你的页面上用到...

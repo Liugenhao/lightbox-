@@ -1,0 +1,20 @@
+*{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+html,body{width:100%;height:100%;background-color:#fff;color:#555;font-family:"微软雅黑","宋体";}
+#main{width:100%;height:100%;position:relative;}
+#btn{border:1px solid #ddd;color:#333;background-color:#ddd;padding:4px 12px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+
+/* 弹层内容样式 */
+#module{position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.6);display:none;z-index:10;}
+.lightbox{display:none;width:600px;height:560px;z-index:20;padding:15px;background-color:#fff;position:absolute;top:50%;left:50%;margin-left:-300px;margin-top:-280px;}
+.lightbox-title{position:relative;padding:10px 0;border-bottom:1px solid #ddd;}
+.lightbox-title h3{text-align:center;}
+#close{position:absolute;right:15px;top:0;width:30px;height:30px;background-color:#ddd;color:#fff;line-height:30px;text-align:center;cursor:pointer;transition:0.6s;}
+#close:hover{background-color:#666;}
+.lightbox-content{height:430px;padding:15px 0;border-bottom:1px solid #ddd;}
+.lightbox-footer{padding:15px 0;text-align:center;}
+.lightboxShow{animation:showlightbox 0.6s linear;}
+@keyframes showlightbox{
+	0%{transform:scale(1.2);}
+	50%{transform:scale(0.9);}
+	100%{transform:scale(1);}
+}
